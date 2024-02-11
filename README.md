@@ -4,7 +4,7 @@ FloatupEffect is a simple and easy to use library for creating floating up effec
 
 ## Demo
 
-![FloatupEffect]()
+![](https://github.com/noppefoxwolf/FloatUpEffect/blob/main/.github/example.gif)
 
 ## Usage
 

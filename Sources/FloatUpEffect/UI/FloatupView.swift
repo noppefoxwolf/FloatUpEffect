@@ -1,12 +1,12 @@
 import SwiftUI
 
-public struct FloatupView<Content: View, FloatupContent: View>: View {
+public struct FloatUpView<Content: View, FloatUpContent: View>: View {
     public init(
         @ViewBuilder content: @escaping (@escaping () -> Void) -> Content,
-        @ViewBuilder floatupContent: @escaping () -> FloatupContent
+        @ViewBuilder floatUpContent: @escaping () -> FloatUpContent
     ) {
         self.content = content
-        self.floatupContent = floatupContent
+        self.floatUpContent = floatUpContent
     }
     
     @State
@@ -16,7 +16,7 @@ public struct FloatupView<Content: View, FloatupContent: View>: View {
     let content: (_ trigger: @escaping () -> Void) -> Content
     
     @ViewBuilder
-    let floatupContent: () -> FloatupContent
+    let floatUpContent: () -> FloatUpContent
     
     public var body: some View {
         content({
@@ -24,7 +24,7 @@ public struct FloatupView<Content: View, FloatupContent: View>: View {
         })
         .overlay {
             ForEach(data, id: \.id) { data in
-                floatupContent()
+                floatUpContent()
                     .floatup(data)
                     .onCompleteFloatupAnimation {
                         self.data.removeAll(where: { $0 == data })

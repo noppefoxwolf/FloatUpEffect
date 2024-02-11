@@ -39,4 +39,4 @@ dependencies: [
 
 ## License
 
-FloatupEffect is available under the MIT license. See the LICENSE file for more info.
+FloatUpEffect is available under the MIT license. See the LICENSE file for more info.

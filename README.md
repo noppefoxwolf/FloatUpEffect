@@ -1,6 +1,6 @@
 # FloatUpView
 
-FloatUpView is a simple and easy to use library for creating floating up effect for any view in Android. You can easily customize the floating up effect by changing the duration, distance, and direction of the floating up effect.
+FloatUpView is a simple and easy to use library for creating floating up effect for any view in iOS. You can easily customize the floating up effect by changing the duration, distance, and direction of the floating up effect.
 
 ## Demo
 
